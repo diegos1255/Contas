@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=utf-8"%>
-<div ng-controller="HomeController">
+<div ng-controller="ContaController">
 
 	<ol class="breadcrumb">
 		<li class="breadcrumb-item" style="color: #007bff;">Você está em</li>
@@ -11,46 +11,23 @@
 	
 		<div class="card-body">
 			<div class="form-group">
-				<label>Nome</label> <input type="text"
-					class="form-control" placeholder="Digite o nome do usuário">
+				<label>Despesa</label> <input type="text"
+					class="form-control" placeholder="Digite o nome da despesa">
 			</div>
 
 			<div class="form-group">
-				<label>CPF/CNPJ</label> <input type="text"
-					class="form-control" placeholder="Digite o CPF/CNPJ">
+				<label>Valor</label> <input type="text"
+					class="form-control" placeholder="Digite o valor">
 			</div>
 
 			<div class="form-group">
-				<label>CEP</label> <input type="text"
-					class="form-control" placeholder="Digite o CEP">
+				<label>Tipo Conta</label>
+				<select class="form-control" style="height: auto;" ng-model="container.tipoSelecionado">
+					 <option value="">--Selecione--</option>
+					 <option ng-repeat="tipo in container.tipos" value="{{tipo.id}}">{{tipo.tipoConta}}</option>
+	        	</select>
 			</div>
 
-			<div class="form-group">
-				<div class="form-row"> 
-					<div class="col-md-6">
-						<label>Endereço</label> <input type="text"
-					class="form-control" placeholder="Digite o Endereço">
-					</div>
-					<div class="col-md-6">
-						<label>Nº</label> <input type="text"
-					class="form-control" placeholder="Digite o Nº">
-					</div>
-				</div>
-			</div>
-
-			<div class="form-group">
-				<div class="form-row"> 
-					<div class="col-md-6">
-						<label for="exampleInputPassword1">Telefone</label> <input type="text"
-							class="form-control" placeholder="Digite o Telefone">
-					</div>
-					<div class="col-md-6">
-						<label>E-mail</label> <input
-							type="password" class="form-control" placeholder="Digite o E-mail">
-					</div>
-				</div>
-			</div>
-	
 			<button class="btn btn-primary btn-block">Salvar</button>
 	
 		</div>

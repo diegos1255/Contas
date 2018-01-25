@@ -22,7 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/sb-admin.css" rel="stylesheet">
-
+    
   </head>
 
  <body ng-app="app" class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -56,8 +56,9 @@
             </a>
             <ul class="sidenav-second-level collapse" id="collapseComponents">
               <li>
-                <a href="#"><i class="fa fa-fw fa-money"></i>Cadastro de Contas</a>
-                <a href="#"><i class="fa fa-fw fa-wrench"></i>Lista de Contas</a>
+                <a ui-sref="conta"><i class="fa fa-fw fa-money"></i>Cadastro de Contas</a>
+                <a ui-sref="tipoConta"><i class="fa fa-fw fa-money"></i>Cadastro de Tipo de Conta</a>
+                <a ui-sref="home"><i class="fa fa-fw fa-wrench"></i>Lista de Contas</a>
               </li>
             </ul>
           </li>
@@ -99,7 +100,7 @@
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>Todos os direitos reservados - Moto Peças 2017</small>
+          <small>Todos os direitos reservados - DS 2018</small>
         </div>
       </div>
     </footer>
@@ -148,8 +149,9 @@
 	<script src="js/sweetalert.min.js"></script>
 	<script src="js/angular-ui-router.min.js"></script>
 	<script src="controller/app.js"></script>
-	<script src="controller/usuario/usuarioController.js"></script>
 	<script src="controller/home/homeController.js"></script>
+	<script src="controller/tipoConta/tipoContaController.js"></script>
+	<script src="controller/conta/contaController.js"></script>
 	<script src="js/dirPagination.js"></script>
 	<script src="js/Util.js"></script>
 

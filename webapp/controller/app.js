@@ -17,6 +17,10 @@ app.config(function($stateProvider, $locationProvider) {
 		url: '/home',
 		templateUrl: 'pages/home.jsp'
 	})
+	.state('conta', {
+		url: '/conta',
+		templateUrl: 'pages/cadastroContas.jsp'
+	})
 	.state('tipoConta', {
 		url: '/tipoConta',
 		templateUrl: 'pages/cadastroTipoConta.jsp' 

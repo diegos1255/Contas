@@ -12,7 +12,7 @@
 		<div class="card-body">
 			<div class="form-group">
 				<label>Nome</label> <input type="text"
-					class="form-control" placeholder="Digite o tipo da conta">
+					class="form-control" placeholder="Digite o tipo da conta" ng-model="container.tipo">
 			</div>
 
 			<button class="btn btn-primary btn-block" style="width: auto;">Salvar</button>
