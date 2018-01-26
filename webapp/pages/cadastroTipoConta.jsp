@@ -7,7 +7,7 @@
 		<li class="breadcrumb-item active">Cadastrar Tipo de Conta</li>
 	</ol>
 	
-	<form name="cadastroTipoConta" ng-submit="salvar()" style="width: 50%;">
+	<form name="cadastroTipoConta" ng-submit="salvar()">
 	
 		<div class="card-body">
 			<div class="form-group">
@@ -15,7 +15,7 @@
 					class="form-control" placeholder="Digite o tipo da conta" ng-model="container.tipo">
 			</div>
 
-			<button class="btn btn-primary btn-block" style="width: auto;">Salvar</button>
+			<button class="btn btn-primary btn-block">Salvar</button>
 	
 		</div>
 	

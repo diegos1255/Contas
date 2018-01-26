@@ -11,13 +11,13 @@
 	
 		<div class="card-body">
 			<div class="form-group">
-				<label>Despesa</label> <input type="text"
-					class="form-control" placeholder="Digite o nome da despesa">
+				<label>Descrição Despesa</label> <input type="text"
+					class="form-control" placeholder="Digite a descrição da despesa" ng-model="container.despesa">
 			</div>
 
 			<div class="form-group">
 				<label>Valor</label> <input type="text"
-					class="form-control" placeholder="Digite o valor">
+					class="form-control" placeholder="Digite o valor" ng-model="container.valor">
 			</div>
 
 			<div class="form-group">
